@@ -14,12 +14,13 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 
 export default function Home({route,navigation}){
-    return<Tab.Navigator>
-    <Tab.Screen name="login" component={render_screen} />
-    <Tab.Screen name="login1" component={render_screen} />
-    <Tab.Screen name="login2" component={render_screen} />
-    <Tab.Screen name="login3" component={render_screen} />
-    <Tab.Screen name="login4" component={render_screen} />
+    return<Tab.Navigator tabBarOptions={{activeTintColor: '#ff6600', 
+    inactiveTintColor: 'grey'}}>
+    <Tab.Screen name="Home"  component={render_screen} />
+    <Tab.Screen name="Courses" component={render_screen} />
+    <Tab.Screen name="Cart" component={render_screen} />
+    <Tab.Screen name="Result" component={render_screen} />
+    <Tab.Screen name="My" component={render_screen} />
   </Tab.Navigator>
 }
 
